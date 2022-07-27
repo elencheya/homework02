@@ -8,6 +8,33 @@
 --footer-text-color:rgba(255, 255, 255, 0.6);
 --button-no-active-color:#F5F4FA;
 }
+
+h1,
+h2,
+h3,
+p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+ul,
+ol{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+}
+
+img{
+    display: block;
+}
+
+.container{
+    width: 1200px;
+    margin-left:auto ;
+    margin-right:auto ;
+    padding-left: 15px ;
+    padding-right: 15px ;
+}
 /*Главная страница + повторяющееся инфа*/
 /*Значение для всего макета*/
 body{
@@ -31,6 +58,18 @@ clip: rect(0 0 0 0);
 overflow: hidden;
 }
 
+.header-container{
+    display:flex;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.header-navigation{
+    display: flex;
+    align-items: center;
+}
+
 /*Значение для header and footer (логотип),активные ссылки и контакты)*/
 .logo-head,
 .logo-footer{
@@ -41,11 +80,19 @@ overflow: hidden;
     line-height: 1.2;
     text-decoration: none;
 }
+.logo-head{
+    margin-right: 93px;
+}
 .logo-head .firstpart,
 .logo-footer .firstpart{
     color:var(--navigation-color);
 }
-
+.site-nav{
+    display: flex;
+}
+.site-nav li:not(:last-child){
+    margin-right: 50px;
+}
 .site-nav .link{
     color:var(--main-text-color);
     font-style: normal;
@@ -61,7 +108,13 @@ overflow: hidden;
 .site-nav .link.current{
     color: var(--navigation-color)
 }
-
+.contacts-nav{
+    display: flex;
+    margin-left: auto;
+}
+.contacts-nav li:not(:last-child){
+    margin-right: 50px;
+}
 .contacts-nav .contact{
     color: var(--second-text-color);
     font-style: normal;
@@ -75,11 +128,13 @@ overflow: hidden;
     color: var(--navigation-color);
 }
 
+
 /*Убираем точки у всех списков*/
 ul{
     list-style: none;
 }
 /*Стилизация кнопки и подложки*/
+/*HERO*/
 .hero{
     background-color: var(--footer-background-color);
 }
@@ -119,7 +174,7 @@ ul{
     color: var(--main-text-color);
     font-size: 36px;
     line-height: 1.2;
-    text-align: center;
+    text-align: center; 
 }
 .about .about-description{
     line-height: 1.71;
