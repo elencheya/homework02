@@ -83,6 +83,8 @@ overflow: hidden;
 .logo-head{
     margin-right: 93px;
 }
+
+
 .logo-head .firstpart,
 .logo-footer .firstpart{
     color:var(--navigation-color);
@@ -137,37 +139,65 @@ ul{
 /*HERO*/
 .hero{
     background-color: var(--footer-background-color);
+    text-align: center;
+
 }
+
 .hero .hero-title{
+    margin-bottom: 30px;
+    width: 697px;
+    margin-left: auto;
+    margin-right: auto;
+    
     color: var(--white-color);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
 .hero .hero-button{
+    border-radius: 4px;
+    border-color: transparent;
+    min-width: 136px;
+    padding: 10px 32px;
+    margin-bottom: 200px;
+
+
     font-family: inherit;
     color: var(--white-color);
     background-color: var(--navigation-color);
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    display: flex;
+    display:inline-block;
     align-items: center;
-    text-align: center;
     letter-spacing: 0.06em;
     text-decoration: none;
     cursor: pointer;
 }
+.about-list{
+    display: flex;
+    gap: 30px;
+}
+
+.about-container{
+    margin-top: 94px;
+    padding-bottom: 47px;
+    display: flex;
+}
 
 /*Стилизация заголовков h1/h2/h3*/
 .about .about-title{
+    margin-bottom: 10px;
+
     color: var(--main-text-color);
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+}
+.work-title{
+    padding-top: 47px;
 }
 .work .work-title,
 .team .team-title{
@@ -176,15 +206,35 @@ ul{
     line-height: 1.2;
     text-align: center; 
 }
+.work-imeges{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 50px;
+}
 .about .about-description{
     line-height: 1.71;
 }
+.team{
+    margin-bottom: 94px;
+}
+.team-title{
+    margin-top: 94px;
+    margin-bottom: 50px;
+}
 .team .team-member{
+    margin-bottom: 10px;
+
     color: var(--main-text-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
     text-align: center;
+}
+.team-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 .team .team-position{
     font-weight: 400;
@@ -192,7 +242,10 @@ ul{
     line-height: 1.2;
     text-align: center;
 }
-
+.team-description{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
 .location-nav{
     background-color: var(--footer-background-color);
     text-decoration: none;
@@ -211,6 +264,7 @@ ul{
     line-height: 1.71;
     text-decoration: none;
 }
+
 .location-list .location-contact:hover,
 .location-list .location-contact:focus{
     color: var(--navigation-color);
@@ -219,7 +273,24 @@ ul{
 
 /*Портфолио*/
 /*Cтилизация активных кнопок*/
+.service-list-container{
+    margin-top: 94px;
+    margin-bottom: 94px;
+}
+
+.service-list{
+    margin-bottom: 34px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
 .button{
+    border-color: transparent;
+    border-radius: 4px;
+    min-width: 73px;
+    padding: 6px 22px;
+
     font-family: inherit;
     color: var(--footer-background-color);
     background-color: var(--button-no-active-color);
@@ -228,24 +299,49 @@ ul{
     line-height: 1.62;
     text-align: center;
     cursor: pointer;
-   }
+}
+
 .button:hover,
 .button:focus{
     color: var(--white-color);
     background-color: var(--navigation-color);
 }
+
+
 .button.current{
     color: var(--white-color);
     background-color:var(--navigation-color);
 }
+
+
+.service-projects{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; ;
+}
+
+
+.service-projects-container{
+    margin-bottom: 94px;
+}
+
+.project-title-list{
+    padding: 20px 24px;
+}
 /*Cтилизация списка проектов*/
 .service-projects .project-title{
+    margin-top: 20px;
+
+
     color: var(--main-text-color);
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
 }
 .service-projects .project-kind{
+    margin-top: 4px;
+
+
     font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
@@ -254,4 +350,16 @@ ul{
 .location-nav .logo-footer{
     color:var(--white-color);
     text-decoration: none;
+}
+
+.location-nav-container{
+    padding-top: 60px;
+    padding-bottom: 60px ;
+    justify-content: flex-start;
+}
+.location-list{
+    margin-top: 20px;
+}
+.location-list li:not(:last-child){
+    margin-bottom: 9px;
 }
